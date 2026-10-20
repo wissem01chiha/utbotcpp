@@ -33,3 +33,6 @@
 
 # CLion/IDEA files
 .idea
+
+build/
+.vscode/
