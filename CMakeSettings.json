@@ -1,0 +1,20 @@
+﻿
+{
+    "configurations": [
+        {
+            "buildRoot": "${projectDir}\\build\\${name}",
+            "cmakeCommandArgs": "",
+            "cmakeToolchain":
+                "C:/Program Files/Microsoft Visual Studio/18/Community/VC/vcpkg/scripts/buildsystems/vcpkg.cmake",
+            "configurationType": "Debug",
+            "ctestCommandArgs": "",
+            "inheritEnvironments": [
+                "msvc_x64"
+            ],
+            "generator": "Ninja",
+            "installRoot": "${projectDir}\\build\\install\\${name}",
+            "name": "Ninja-x64-Debug",
+            "buildCommandArgs": ""
+        }
+    ]
+}

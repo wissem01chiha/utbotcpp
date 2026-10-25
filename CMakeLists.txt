@@ -1,4 +1,8 @@
-cmake_minimum_required(VERSION 3.12)
+#
+# UnitTestBot
+# Copyright 2022 UnitTestBot contributors (utbot.org)
+#
+cmake_minimum_required(VERSION 3.12 FATAL_ERROR)
 
 if (NOT DEFINED VERSION)
     if (DEFINED ENV{VERSION})
@@ -16,8 +20,12 @@ if (NOT DEFINED RUN_INFO)
     endif ()
 endif ()
 
-project(UTBotCpp DESCRIPTION "Tool that generates unit test by C/C++ source code, trying to reach all branches and maximize code coverage"
-        HOMEPAGE_URL "https://www.utbot.org" VERSION ${VERSION})
+project(UTBotCpp 
+    DESCRIPTION "Automated unit and integration testing for c and c++"
+    HOMEPAGE_URL "https://www.utbot.org" 
+    VERSION ${VERSION}
+)
+
 set(PROJECT_ORG "UnitTestBot")
 
 message("Project: ${PROJECT_NAME}")
