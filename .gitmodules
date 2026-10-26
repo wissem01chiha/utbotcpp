@@ -18,4 +18,4 @@
 	url = https://github.com/greg7mdp/parallel-hashmap
 [submodule "tools"]
 	path = tools
-	url = https://github/wissem01chiha/tools.git
+	url = https://github.com/wissem01chiha/tools.git

@@ -28,10 +28,14 @@ project(UTBotCpp
 
 set(PROJECT_ORG "UnitTestBot")
 
-message("Project: ${PROJECT_NAME}")
-message("Organisation: ${PROJECT_ORG}")
-message("Homepage: ${CMAKE_PROJECT_HOMEPAGE_URL}")
-message("Version: ${CMAKE_PROJECT_VERSION}")
-message("Run from: ${RUN_INFO}")
+list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/config")
+
+include(Options)
+
+configure_file(
+    ${PROJECT_SOURCE_DIR}/config/config.h.in 
+    ${PROJECT_BINARY_DIR}/config.h 
+    @ONLY
+)
 
 add_subdirectory(server)

@@ -1,3 +1,7 @@
+#
+# UnitTestBot
+# Copyright 2022 UnitTestBot contributors (utbot.org)
+#
 message(STATUS "CMake generator: ${CMAKE_GENERATOR}")
 if (DEFINED CMAKE_CONFIGURATION_TYPES)
     # Multi-configuration build (e.g. Xcode). Here

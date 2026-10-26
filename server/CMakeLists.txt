@@ -1,3 +1,7 @@
+#
+# UnitTestBot
+# Copyright 2022 UnitTestBot contributors (utbot.org)
+#
 include_directories(${PROJECT_BINARY_BIN})
 
 configure_file(config.h.in config.h @ONLY)
